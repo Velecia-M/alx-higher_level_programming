@@ -6,7 +6,7 @@ if __name__ == "__main__":
     if n_of_el > 1:
         print("{} arguments:".format(n_of_el))
         for x in range(1, n_of_el +1):
-            print("{}: {}".format(n_of_el, arg[x]))
+            print("{}: {}".format(x, arg[x]))
     elif n_of_el == 0:
         print("{} arguments.".format(n_of_el))
     else:
