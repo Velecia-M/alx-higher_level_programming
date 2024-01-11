@@ -11,4 +11,4 @@ if __name__ == "__main__":
         print("{} arguments.".format(n_of_el))
     else:
         print("{} arguments:".format(n_of_el))
-        print("{}: {}".format(x, arg[1]))
+        print("{}: {}".format(n_of_el, arg[1]))
