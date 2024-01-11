@@ -8,7 +8,7 @@ if __name__ == "__main__":
         for x in range(1, n_of_el +1):
             print("{}: {}".format(x, arg[x]))
     elif n_of_el == 0:
-        print("{} arguments".format(n_of_el))
+        print("{} arguments.".format(n_of_el))
     else:
         print("{} arguments:".format(n_of_el))
         print("{}: {}".format(x, arg[1]))
