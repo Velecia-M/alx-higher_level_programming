@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    x = matrix.copy()
+    new_matrix = matrix.copy()
     for i in range(len(matrix)):
-        x[i] = list(map(lambda y: y * y, matrix[i]))
-        return x
+        new_matrix[i] = list(map(lambda x: x * x, matrix[i]))
+        return (new_matrix)
