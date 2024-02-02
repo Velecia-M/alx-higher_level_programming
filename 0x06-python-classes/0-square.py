@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-"""A Square module"""
+"""A Square module."""
+
 
 class Square:
-    """Square declaration"""
+    """A Square declaration."""
 
     pass
