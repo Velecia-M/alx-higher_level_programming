@@ -8,13 +8,11 @@ class Square:
 
     pass
 
-#!/usr/bin/python3
-
 """square module"""
 
 class Square:
     """Defining a square"""
-    def __init(self, size):
+    def __init__(self, size):
         """constructor
         Args:
         size (int): size of the square
