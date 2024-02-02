@@ -1,9 +1,22 @@
 #!/usr/bin/python3
 
-"""A Square module."""
+"""Module for Square class."""
 
 
 class Square:
-    """A Square declaration."""
+    """Defining the class"""
 
     pass
+
+#!/usr/bin/python3
+
+"""square module"""
+
+class Square:
+    """Defining a square"""
+    def __init(self, size):
+        """constructor
+        Args:
+        size (int): size of the square
+        """
+        self.__size = size
