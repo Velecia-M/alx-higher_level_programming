@@ -49,4 +49,13 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        self.__y = value
+       self.__y = value
+
+    def validation_method(self, name, value):
+        """ Method for value validation """
+        if type(value) != int:
+            raise TypeError("{} must be an integer".format(name))
+        if type(value) == int and value < 0:
+            raise ValueError("{} must be > 0".format(name))
+        elif type(value) == int and value <= 0:
+            raise ValueError("{} must be >= 0".format(name))
