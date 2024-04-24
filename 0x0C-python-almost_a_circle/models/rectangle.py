@@ -62,7 +62,7 @@ class Rectangle(Base):
         if equal and value < 0:
             raise ValueError("{} must be >= 0".format(name))
         elif not equal and value <= 0:
-           raise ValueError("{} must be > 0".format(name))
+            raise ValueError("{} must be > 0".format(name))
 
     def area(self):
         """ Calculates the Area of the Rectangle. """
