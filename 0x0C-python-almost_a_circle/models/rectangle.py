@@ -59,7 +59,7 @@ class Rectangle(Base):
         """ Method for value validation """
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
-        elif equal and value < 0:
+        if equal and value < 0:
             raise ValueError("{} must be >= 0".format(name))
         elif not equal and value <= 0:
             raise ValueError("{} must be > 0".format(name))
