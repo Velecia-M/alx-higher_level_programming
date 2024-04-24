@@ -56,10 +56,14 @@ class Rectangle(Base):
         self.__y = value
 
     def int_valid_method(self, name, value, equal=True):
-        """ Method for value validation """
+        """ Method for value validation. """
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
         if equal and value < 0:
             raise ValueError("{} must be >= 0".format(name))
         elif not equal and value <= 0:
-            raise ValueError("{} must be > 0".format(name))
+           raise ValueError("{} must be > 0".format(name))
+
+    def area(self):
+        """ Calculates the Area of the Rectangle. """
+        return (self.width * self.height)
