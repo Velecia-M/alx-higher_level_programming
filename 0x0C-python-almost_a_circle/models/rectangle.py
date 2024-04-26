@@ -78,3 +78,25 @@ class Rectangle(Base):
         """ Returns the string information of the Rectangle. """
         return '[{}] ({}) {}/{} - {}/{}'.\
             format(type(self).__name__, self.id, self.x, self.y, self.width, self.height)
+
+    def __rec_update(self, id=None, width=None, height=None, x=None, y=None):
+        """ Method to update the instance attributes. """
+        if id is not None:
+            self.id = id
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
+
+    def rec_update(self, *args, **kwargs):
+        """ Updates the instance attributes through no-key and keyword args. """
+        # print(args, kwargs)
+
+        if args:
+            self.__rec_update(*args)
+        elif kwargs:
+            self.__rec_update(**kwargs)
