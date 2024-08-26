@@ -4,6 +4,8 @@
 const args = process.argv;
 
 if (args.length <= 3) {
+  console.log('0');
+} else {
   let int2 = parseInt(args[2]);
   let highest = parseInt(args[3]);
   for (let i = 2; i < args.length; i++) {
