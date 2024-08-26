@@ -9,7 +9,7 @@ if (size === undefined || isNaN(parseInt(size))) {
   for (let i = 0; i < parseInt(size); i++) {
     let line = '';
     for (let j = 0; j < parseInt(size); j++) {
-      line = 'X';
+      line += 'X';
     }
     console.log(line);
   }
